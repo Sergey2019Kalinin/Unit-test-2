@@ -25,7 +25,7 @@ export default function healthValue (healthObj) {
 
 function sortHeroes (heroesArray) {
 
-	heroesArray.sort (function (a, b) {
+	return (heroesArray.sort (function (a, b) {
 
 		if (a.health < b.health) {
 	    	return 1;
@@ -36,7 +36,7 @@ function sortHeroes (heroesArray) {
 		}
 
 		return 0;
-	});
+	}));
 
 }
 

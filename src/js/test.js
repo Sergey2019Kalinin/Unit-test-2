@@ -1,5 +1,7 @@
 import healthValue from './app.js'
 
+import {sortHeroes} from './app.js'
+
 test('значение уровня жизни игрового персонажа - healthy', () => {
 
 	const input = {name: 'Маг', health: 90};
@@ -26,8 +28,6 @@ test('значение уровня жизни игрового персонаж
 
 	expect(received).toBe(expected);
 });
-
-import {sortHeroes} from './app.js'
 
 test('сортировка персонажей по уровню жизни - уровень первого больше', () => {
 
